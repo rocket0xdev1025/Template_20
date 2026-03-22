@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CHIB ELON</title>
+    <meta charset="UTF-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <style>
+      body {
+        opacity: 0;
+        visibility: hidden;
+        background-color: #000;
+        transition: opacity 0.2s ease 0.2s, visibility 0.2s ease 0.2s;
+      }
+
+      .loaded body {
+        opacity: 1;
+        visibility: visible;
+      }
+    </style>
+    <link rel="stylesheet" href="css/style.min.css?_v=20241027231045" />
+    <link rel="icon" href="assets/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body data-custom-cursor>
+    <div class="wrapper">
+      <div class="menu-open-bg"></div>
+      <header class="header">
+        <div class="header__container">
+          <div class="header__menu menu">
+            <button type="button" class="menu__icon icon-menu">
+              <span></span>
+            </button>
+            <nav class="menu__body">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a href="#" data-goto=".hero" class="menu__link">Home</a>
+                </li>
+                <li class="menu__item">
+                  <span>/</span>
+                </li>
+                <li class="menu__item">
+                  <a
+                    href="#"
+                    data-goto=".about"
+                    data-goto-top="-20"
+                    class="menu__link"
+                    >About</a
+                  >
+                </li>
+                <li class="menu__item">
+                  <span>/</span>
+                </li>
+                <li class="menu__item">
+                  <a href="#" data-goto=".approach" class="menu__link"
+                    >HOW TO BUY</a
+                  >
+                </li>
+                <li class="menu__item">
+                  <span>/</span>
+                </li>
+                <li class="menu__item">
+                  <a
+                    href="#"
+                    data-goto=".products"
+                    data-goto-top="-30"
+                    class="menu__link"
+                    >GALLERY</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <main class="page">
+        <section class="page__hero hero" data-watch="navigator">
+          <div class="hero__bg">
+            <img src="img/hero/bg.svg" alt="Image" />
+          </div>
+          <div class="hero__container">
+            <div class="hero__main">
+              <div class="hero__title">
+                <img src="img/hero/grok.png" alt="Image" />
+                <img src="img/hero/02.png" alt="Image" />
+                <!-- <img src="img/hero/03.png" alt="Image" /> -->
+              </div>
+              <div class="hero__actions">
+                <div class="hero__social">
+                  <a
+                    href="https://app.uniswap.org/swap?inputCurrency=ETH&outputCurrency=0x9a82dF96f8D2c78e6a4B63cD01eD3ffC30111700"
+                    target="_blank"
+                    class="hero__social-item"
+                  >
+                    <img src="img/social/Uniswap.svg" alt="Uniswap" />
+                  </a>
+                  <a
+                    href="https://x.com/ChibElon_X"
+                    target="_blank"
+                    class="hero__social-item"
+                  >
+                    <img src="img/social/X.svg" alt="X" />
+                  </a>
+                  <a
+                    href="https://t.me/chibelon_portal"
+                    target="_blank"
+                    class="hero__social-item"
+                  >
+                    <img src="img/social/Tel.svg" alt="Telegram" />
+                  </a>
+                  <!-- <a
+                    href="https://medium.com/@ninjatrade"
+                    target="_blank"
+                    class="hero__social-item"
+                  >
+                    <img src="img/social/linktree.svg" alt="Medium" />
+                  </a> -->
+                  <a
+                    href="https://www.dextools.io/app/token/chibelononerc"
+                    target="_blank"
+                    class="hero__social-item"
+                  >
+                    <img src="img/social/Dextools.svg" alt="Dextools" />
+                  </a>
+                  <a
+                    href="https://etherscan.io/token/0x9a82dF96f8D2c78e6a4B63cD01eD3ffC30111700"
+                    target="_blank"
+                    class="hero__social-item"
+                  >
+                    <img src="img/social/BaseScan.svg" alt="BaseScan" />
+                  </a>
+                </div>
+                <a
+                  href="https://app.uniswap.org/swap?inputCurrency=ETH&outputCurrency=0x9a82dF96f8D2c78e6a4B63cD01eD3ffC30111700"
+                  target="_blank"
+                  class="hero__button"
+                >
+                  <span>BUY CHIBELON</span>
+                  <img src="img/hero/icon.svg" alt="Icon" />
+                </a>
+              </div>
+            </div>
+            <a
+              href="#"
+              data-goto=".about"
+              data-goto-top="-20"
+              class="hero__learn-more"
+            >
+              <span>Learn more</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+              >
+                <path
+                  d="M16 3.42188L6.70312 12.7031L5.29688 11.2969L16 0.578125L26.7031 11.2969L25.2969 12.7031L16 3.42188ZM16 28.5781L25.2969 19.2969L26.7031 20.7031L16 31.4219L5.29688 20.7031L6.70312 19.2969L16 28.5781Z"
+                  fill="#F2F2F2"
+                />
+              </svg>
+            </a>
+          </div>
+        </section>
+        <section class="page__about about" data-watch="navigator">
+          <div
+            class="about__container"
+            data-watch-threshold="0.6"
+            data-watch-once
+            data-watch
+          >
+            <div
+              class="about__image"
+              data-watch-threshold="0.55"
+              data-watch-once
+              data-watch
+            >
+              <!-- <img src="img/about/02.png" alt="Image" /> -->
+              <video src="grok.mp4" autoplay muted loop style="z-index: 1; object-fit: cover;"></video>
+            </div>
+            <div
+              class="about__content"
+              data-watch-threshold="0.55"
+              data-watch-once
+              data-watch
+            >
+              <h2 class="about__title">
+                <span>ABOUT</span>
+                <!-- <img src="img/about/titleDecor.svg" alt="ABOUT" /> -->
+              </h2>
+              <div class="about__text">
+                These chibi Elon figures are dangerously cute 😭💙  <br></br>Big sparkling eyes, fluffy hair, tiny blue jacket, mic in hand, and that American flag backdrop… I’m melting.
+              </div>
+              <a
+                href="https://app.uniswap.org/swap?inputCurrency=ETH&outputCurrency=0x9a82dF96f8D2c78e6a4B63cD01eD3ffC30111700"
+                target="_blank"
+                class="about__button"
+              >
+                <span>BUY NOW</span>
+                <img src="/img/uniswap.png" width="30" height="30" />
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="page__about about" data-watch="navigator">
+          <div
+            class="about__container"
+            data-watch-threshold="0.6"
+            data-watch-once
+            data-watch
+          >
+            <div
+              class="about__image"
+              data-watch-threshold="0.55"
+              data-watch-once
+              data-watch
+            >
+              <img src="img/elonprofile.png" alt="Image" >
+              <img src="img/elonprofile.png" alt="Elon profile image" />
+            </div>
+            <div
+              class="about__content"
+              data-watch-threshold="0.55"
+              data-watch-once
+              data-watch
+            >
+              <div class="about__text">
+                Elon Musk recently updated his X profile picture to a playful chibi-style version of himself, adding a humorous and unexpected twist to his online persona. The stylized image, featuring a cartoonish depiction with a smoking pose, quickly caught the attention of the internet. It reflects Musk’s tendency to blend meme culture with his public image, sparking both amusement and conversation.
+              </div>
+              <a
+                href="https://app.uniswap.org/swap?inputCurrency=ETH&outputCurrency=0x9a82dF96f8D2c78e6a4B63cD01eD3ffC30111700"
+                target="_blank"
+                class="about__button"
+              >
+                <span>BUY NOW</span>
+                <img src="/img/uniswap.png" width="30" height="30" />
+              </a>
+            </div>
+          </div>
+        </section>
+        <section class="page__approach approach" data-watch="navigator">
+          <div class="approach__container">
+            <h2
+              class="approach__title"
+              data-watch-threshold="0.75"
+              data-watch-once
+              data-watch
+            >
+              <img src="img/approach/title.png" alt="OUR APPROACH" />
+            </h2>
+            <div class="approach__body">
+              <div
+                class="approach__image"
+                data-watch-threshold="0.6"
+                data-watch-once
+                data-watch
+                data-prlx-parent
+              >
+                <img src="img/approach/01.png" alt="Image" />
+                <img data-prlx src="img/approach/02.png" alt="Image" />
+              </div>
+              <div class="approach__items">
+                <article
+                  class="approach__item item-approach"
+                  data-watch-threshold="0.8"
+                  data-watch-once
+                  data-watch
+                >
+                  <div class="item-approach__header">
+                    <span>create a wallet</span>
+                  </div>
+                  <div class="item-approach__text">
+                    Download metamask or your wallet of choice from the app store or google play store for free. Desktop users, download the google chrome extension by going to metamask.io.
+                  </div>
+                </article>
+                <article
+                  class="approach__item item-approach"
+                  data-watch-threshold="0.8"
+                  data-watch-once
+                  data-watch
+                >
+                  <div class="item-approach__header">
+                    <span>Get Some ETH</span>
+                  </div>
+                  <div class="item-approach__text">
+                    Have ETH in your wallet to switch to $CHIBELON. If you don’t have any ETH, you can buy directly on metamask, transfer from another wallet, or buy on another exchange and send it to your wallet.
+                  </div>
+                </article>
+                <article
+                  class="approach__item item-approach"
+                  data-watch-threshold="0.8"
+                  data-watch-once
+                  data-watch
+                >
+                  <div class="item-approach__header">
+                    <span>GO TO DEX AND SWAP</span>
+                  </div>
+                  <div class="item-approach__text">
+                    Go to app.uniswap.org in google chrome or on the browser inside your Metamask app. Paste the $CHIBELON token address into Uniswap, select and confirm. And sign,  switch ETH for $CHIBELON.
+                  </div>
+                </article>
+                <article
+                  class="approach__item item-approach"
+                  data-watch-threshold="0.8"
+                  data-watch-once
+                  data-watch
+                >
+                  <div class="item-approach__text-2">
+                    SUPPLY: 1 BILLION<br/>
+                    BUY/SELL TAX: 0%<br/>
+                    LIQUIDITY: LOCKED<br/>
+                    OWNERSHIP: RENOUNCED
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page__products products" data-watch="navigator">
+          <div class="products__container">
+            <h2
+              class="products__title"
+              data-watch-threshold="0.75"
+              data-watch-once
+              data-watch
+            >
+              <span>Gallery</span>
+              <!-- <img src="img/products/titleDec.svg" alt="" /> -->
+            </h2>
+            <div
+              class="products__items"
+              data-watch-threshold="0.45"
+              data-watch-once
+              data-watch
+            >
+              <article
+                class="products__item item-products"
+                style="flex: 1;"
+                data-watch-threshold="0.65"
+                data-watch-once
+                data-watch
+              >
+                <video style="width: 100%;" src="/videos/1.mp4" autoplay muted loop></video>
+              </article>
+              <article
+                class="products__item item-products"
+                style="flex: 1;"
+                data-watch-threshold="0.65"
+                data-watch-once
+                data-watch
+              >
+                <video style="width: 100%;" src="/videos/2.mp4" autoplay muted loop></video>
+              </article>
+              <article
+                class="products__item item-products"
+                style="flex: 1;"
+                data-watch-threshold="0.65"
+                data-watch-once
+                data-watch
+              >
+                <video style="width: 100%;" src="/videos/3.mp4" autoplay muted loop></video>
+              </article>
+            </div>
+            <div
+              class="products__items"
+              data-watch-threshold="0.45"
+              data-watch-once
+              data-watch
+            >
+              <article
+                class="products__item item-products"
+                style="flex: 1;"
+                data-watch-threshold="0.65"
+                data-watch-once
+                data-watch
+              >
+                <video style="width: 100%;" src="/videos/4.mp4" autoplay muted loop></video>
+              </article>
+              <article
+                class="products__item item-products"
+                style="flex: 1;"
+                data-watch-threshold="0.65"
+                data-watch-once
+                data-watch
+              >
+                <video style="width: 100%;" src="/videos/5.mp4" autoplay muted loop></video>
+              </article>
+              <article
+                class="products__item item-products"
+                style="flex: 1;"
+                data-watch-threshold="0.65"
+                data-watch-once
+                data-watch
+              >
+                <video style="width: 100%;" src="/videos/6.mp4" autoplay muted loop></video>
+              </article>
+            </div>
+            <div
+              class="products__items"
+              data-watch-threshold="0.45"
+              data-watch-once
+              data-watch
+            >
+              <article
+                class="products__item item-products"
+                style="flex: 1;"
+                data-watch-threshold="0.65"
+                data-watch-once
+                data-watch
+              >
+                <video style="width: 100%;" src="/videos/7.mp4" autoplay muted loop></video>
+              </article>
+              <article
+                class="products__item item-products"
+                style="flex: 1;"
+                data-watch-threshold="0.65"
+                data-watch-once
+                data-watch
+              >
+                <video style="width: 100%;" src="/videos/8.mp4" autoplay muted loop></video>
+              </article>
+              <article
+                class="products__item item-products"
+                style="flex: 1;"
+                data-watch-threshold="0.65"
+                data-watch-once
+                data-watch
+              >
+                <video style="width: 100%;" src="/videos/9.mp4" autoplay muted loop></video>
+              </article>
+            </div>
+            <!-- <div
+              class="products__items"
+              data-watch-threshold="0.45"
+              data-watch-once
+              data-watch
+            >
+              <article
+                class="products__item item-products"
+                style="flex: 1;"
+                data-watch-threshold="0.65"
+                data-watch-once
+                data-watch
+              >
+                <video style="width: 100%;" src="/videos/10.mp4" autoplay muted loop></video>
+              </article>
+              <article
+                class="products__item item-products"
+                style="flex: 1;"
+                data-watch-threshold="0.65"
+                data-watch-once
+                data-watch
+              >
+                <video style="width: 100%;" src="/videos/11.mp4" autoplay muted loop></video>
+              </article>
+              <article
+                class="products__item item-products"
+                style="flex: 1;"
+                data-watch-threshold="0.65"
+                data-watch-once
+                data-watch
+              >
+                <video style="width: 100%;" src="/videos/12.mp4" autoplay muted loop></video>
+              </article>
+            </div>
+            <div
+              class="products__items"
+              data-watch-threshold="0.45"
+              data-watch-once
+              data-watch
+            >
+              <article
+                class="products__item item-products"
+                style="flex: 1;"
+                data-watch-threshold="0.65"
+                data-watch-once
+                data-watch
+              >
+                <video style="width: 100%;" src="/videos/13.mp4" autoplay muted loop></video>
+              </article>
+              <article
+                class="products__item item-products"
+                style="flex: 1;"
+                data-watch-threshold="0.65"
+                data-watch-once
+                data-watch
+              >
+                <video style="width: 100%;" src="/videos/14.mp4" autoplay muted loop></video>
+              </article>
+              <article
+                class="products__item item-products"
+                style="flex: 1;"
+                data-watch-threshold="0.65"
+                data-watch-once
+                data-watch
+              >
+                <video style="width: 100%;" src="/videos/15.mp4" autoplay muted loop></video>
+              </article>
+            </div>
+            <div
+              class="products__items"
+              data-watch-threshold="0.45"
+              data-watch-once
+              data-watch
+            >
+              <article
+                class="products__item item-products"
+                style="flex: 1;"
+                data-watch-threshold="0.65"
+                data-watch-once
+                data-watch
+              >
+                <video style="width: 100%;" src="/videos/16.mp4" autoplay muted loop></video>
+              </article>
+              <article
+                class="products__item item-products"
+                style="flex: 1;"
+                data-watch-threshold="0.65"
+                data-watch-once
+                data-watch
+              >
+                <video style="width: 100%;" src="/videos/17.mp4" autoplay muted loop></video>
+              </article>
+              <article
+                class="products__item item-products"
+                style="flex: 1;"
+                data-watch-threshold="0.65"
+                data-watch-once
+                data-watch
+              >
+                <video style="width: 100%;" src="/videos/18.mp4" autoplay muted loop></video>
+              </article>
+            </div>
+            <div
+              class="products__items"
+              data-watch-threshold="0.45"
+              data-watch-once
+              data-watch
+            >
+              <article
+                class="products__item item-products"
+                style="flex: 1;"
+                data-watch-threshold="0.65"
+                data-watch-once
+                data-watch
+              >
+                <video style="width: 100%;" src="/videos/19.mp4" autoplay muted loop></video>
+              </article>
+              <article
+                class="products__item item-products"
+                style="flex: 1;"
+                data-watch-threshold="0.65"
+                data-watch-once
+                data-watch
+              >
+                <video style="width: 100%;" src="/videos/20.mp4" autoplay muted loop></video>
+              </article>
+              <article
+                class="products__item item-products"
+                style="flex: 1;"
+                data-watch-threshold="0.65"
+                data-watch-once
+                data-watch
+              >
+                <video style="width: 100%;" src="/videos/21.mp4" autoplay muted loop></video>
+              </article>
+            </div>
+            <div
+              class="products__items"
+              data-watch-threshold="0.45"
+              data-watch-once
+              data-watch
+            >
+              <article
+                class="products__item item-products"
+                style="flex: 1;"
+                data-watch-threshold="0.65"
+                data-watch-once
+                data-watch
+              >
+                <video style="width: 100%;" src="/videos/22.mp4" autoplay muted loop></video>
+              </article>
+              <article
+                class="products__item item-products"
+                style="flex: 1;"
+                data-watch-threshold="0.65"
+                data-watch-once
+                data-watch
+              >
+                <video style="width: 100%;" src="/videos/23.mp4" autoplay muted loop></video>
+              </article>
+              <article
+                class="products__item item-products"
+                style="flex: 1;"
+                data-watch-threshold="0.65"
+                data-watch-once
+                data-watch
+              >
+                <video style="width: 100%;" src="/videos/24.mp4" autoplay muted loop></video>
+              </article>
+            </div>
+            <div
+              class="products__items"
+              data-watch-threshold="0.45"
+              data-watch-once
+              data-watch
+            >
+              <article
+                class="products__item item-products"
+                style="flex: 1;"
+                data-watch-threshold="0.65"
+                data-watch-once
+                data-watch
+              >
+                <video style="width: 100%;" src="/videos/25.mp4" autoplay muted loop></video>
+              </article>
+              <article
+                class="products__item item-products"
+                style="flex: 1;"
+                data-watch-threshold="0.65"
+                data-watch-once
+                data-watch
+              >
+                <video style="width: 100%;" src="/videos/26.mp4" autoplay muted loop></video>
+              </article>
+              <article
+                class="products__item item-products"
+                style="flex: 1;"
+                data-watch-threshold="0.65"
+                data-watch-once
+                data-watch
+              >
+                <video style="width: 100%;" src="/videos/27.mp4" autoplay muted loop></video>
+              </article>
+            </div>
+            <div
+              class="products__items"
+              data-watch-threshold="0.45"
+              data-watch-once
+              data-watch
+            >
+              <article
+                class="products__item item-products"
+                style="flex: 1;"
+                data-watch-threshold="0.65"
+                data-watch-once
+                data-watch
+              >
+                <video style="width: 100%;" src="/videos/28.mp4" autoplay muted loop></video>
+              </article>
+              <article
+                class="products__item item-products"
+                style="flex: 1;"
+                data-watch-threshold="0.65"
+                data-watch-once
+                data-watch
+              >
+                <video style="width: 100%;" src="/videos/29.mp4" autoplay muted loop></video>
+              </article>
+              <article
+                class="products__item item-products"
+                style="flex: 1;"
+                data-watch-threshold="0.65"
+                data-watch-once
+                data-watch
+              >
+                <video style="width: 100%;" src="/videos/30.mp4" autoplay muted loop></video>
+              </article>
+            </div>
+            <div
+              class="products__items"
+              data-watch-threshold="0.45"
+              data-watch-once
+              data-watch
+            >
+              <article
+                class="products__item item-products"
+                style="flex: 1;"
+                data-watch-threshold="0.65"
+                data-watch-once
+                data-watch
+              >
+                <video style="width: 100%;" src="/videos/31.mp4" autoplay muted loop></video>
+              </article>
+              <article
+                class="products__item item-products"
+                style="flex: 1;"
+                data-watch-threshold="0.65"
+                data-watch-once
+                data-watch
+              >
+                <video style="width: 100%;" src="/videos/32.mp4" autoplay muted loop></video>
+              </article>
+              <article
+                class="products__item item-products"
+                style="flex: 1;"
+                data-watch-threshold="0.65"
+                data-watch-once
+                data-watch
+              >
+                <video style="width: 100%;" src="/videos/33.mp4" autoplay muted loop></video>
+              </article>
+            </div>
+            <div
+              class="products__items"
+              data-watch-threshold="0.45"
+              data-watch-once
+              data-watch
+            >
+              <article
+                class="products__item item-products"
+                style="flex: 1;"
+                data-watch-threshold="0.65"
+                data-watch-once
+                data-watch
+              >
+                <video style="width: 100%;" src="/videos/34.mp4" autoplay muted loop></video>
+              </article>
+              <article
+                class="products__item item-products"
+                style="flex: 1;"
+                data-watch-threshold="0.65"
+                data-watch-once
+                data-watch
+              >
+                <video style="width: 100%;" src="/videos/35.mp4" autoplay muted loop></video>
+              </article>
+              <article
+                class="products__item item-products"
+                style="flex: 1;"
+                data-watch-threshold="0.65"
+                data-watch-once
+                data-watch
+              >
+                <video style="width: 100%;" src="/videos/36.mp4" autoplay muted loop></video>
+              </article>
+            </div>
+            <div
+              class="products__items"
+              data-watch-threshold="0.45"
+              data-watch-once
+              data-watch
+            >
+              <article
+                class="products__item item-products"
+                style="flex: 1;"
+                data-watch-threshold="0.65"
+                data-watch-once
+                data-watch
+              >
+                <video style="width: 100%;" src="/videos/37.mp4" autoplay muted loop></video>
+              </article>
+              <article
+                class="products__item item-products"
+                style="flex: 1;"
+                data-watch-threshold="0.65"
+                data-watch-once
+                data-watch
+              >
+                <video style="width: 100%;" src="/videos/38.mp4" autoplay muted loop></video>
+              </article>
+              <article
+                class="products__item item-products"
+                style="flex: 1;"
+                data-watch-threshold="0.65"
+                data-watch-once
+                data-watch
+              >
+                <video style="width: 100%;" src="/videos/39.mp4" autoplay muted loop></video>
+              </article>
+            </div>
+          </div> -->
+        </section>
+        <section class="page__join join">
+          <div
+            class="join__wrapper"
+            data-watch-threshold="0.3"
+            data-watch-once
+            data-watch
+          >
+            <div class="join__bg">
+              <img src="img/join/bg.svg" alt="Image" />
+            </div>
+            <div class="join__container">
+              <div class="join__title">
+                <img src="img/join/grok.png" alt="Image" />
+                <img src="img/join/02.png" alt="Image" />
+                <!-- <img src="img/hero/03.png" alt="Image" /> -->
+              </div>
+              <div class="join__actions">
+                <div class="join__text">
+                  JOIN THE CHIBELON COMMUNITY FOR REAL-TIME UPDATES AND STAY
+                  AHEAD IN THE COMPETITION.
+                </div>
+                <a
+                  href="https://app.uniswap.org/swap?inputCurrency=ETH&outputCurrency=0x9a82dF96f8D2c78e6a4B63cD01eD3ffC30111700"
+                  target="_blank"
+                  class="join__button"
+                >
+                  <span>BUY CHIBELON</span>
+                  <img src="img/join/icon.svg" alt="Icon" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__top">
+          <div class="footer__container">
+            <div class="footer__top-body">
+              <div class="footer__top-content">
+                <div class="footer__top-column">
+                  <h3 class="footer__top-title">Menu</h3>
+                  <div class="footer__top-menu">
+                    <a href="#" data-goto=".hero" class="footer__top-menu-item"
+                      >home</a
+                    >
+                    <a
+                      href="#"
+                      data-goto=".about"
+                      data-goto-top="-20"
+                      class="footer__top-menu-item"
+                      >about</a
+                    >
+                    <a
+                      href="#"
+                      data-goto=".approach"
+                      class="footer__top-menu-item"
+                      >HOW TO BUY</a
+                    >
+                    <a
+                      href="#"
+                      data-goto=".products"
+                      data-goto-top="-30"
+                      class="footer__top-menu-item"
+                      >gallery</a
+                    >
+                  </div>
+                </div>
+                <div class="footer__top-column">
+                  <h3 class="footer__top-title">Links</h3>
+                  <div class="footer__top-social">
+                    <a
+                      href="https://app.uniswap.org/swap?inputCurrency=ETH&outputCurrency=0x9a82dF96f8D2c78e6a4B63cD01eD3ffC30111700"
+                      target="_blank"
+                      class="footer__top-social-item"
+                    >
+                      <img src="img/social/Uniswap.svg" alt="Uniswap" />
+                    </a>
+                    <a
+                      href="https://x.com/ChibElon_X"
+                      target="_blank"
+                      class="footer__top-social-item"
+                    >
+                      <img src="img/social/X.svg" alt="X" />
+                    </a>
+                    <a
+                      href="https://t.me/chibelon_portal"
+                      target="_blank"
+                      class="footer__top-social-item"
+                    >
+                      <img src="img/social/Tel.svg" alt="Telegram" />
+                    </a>
+                    <!-- <a
+                      href="https://medium.com/@ninjatrade"
+                      target="_blank"
+                      class="footer__top-social-item"
+                    >
+                      <img src="img/social/linktree.svg" alt="Medium" />
+                    </a> -->
+                    <a
+                      href="https://www.dextools.io/app/token/chibelononerc"
+                      target="_blank"
+                      class="footer__top-social-item"
+                    >
+                      <img src="img/social/Dextools.svg" alt="Dextools" />
+                    </a>
+                    <a
+                      href="https://etherscan.io/token/0x9a82dF96f8D2c78e6a4B63cD01eD3ffC30111700"
+                      target="_blank"
+                      class="footer__top-social-item"
+                    >
+                      <img src="img/social/BaseScan.svg" alt="BaseScan" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="footer__top-image">
+                <img src="img/footer/100.png" alt="Logo" />
+                <img src="img/footer/01.png" alt="Logo" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__container">
+            <div class="footer__bottom-body">
+              <span>2026 © ALL RIGHTS RESERVED</span>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/app.min.js?_v=20241027231045"></script>
+  </body>
+</html>
